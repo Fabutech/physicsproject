@@ -1,0 +1,29 @@
+<%- include("partials/header") -%>
+
+<div class="outer-div">
+
+</div>
+<div class="outer">
+    <h1>Adjust the values of the experiment</h1>
+    <form id="setValues" action="/set_values" method="post">
+        <table class="values-table">
+            <tr>
+                <td> <input name="temp_header" value="Temperature (T / °C)"> </td>
+                <td > <input name="pressure_header" value="Pressure (p / mm Hg)"> </td>
+            </tr>
+            <% for (var i=0; i < data[0].length; i++) { %>
+                <tr>
+                    <td> <input name="temp" value="<%= data[0][i] %>"> </td>
+                    <td > <input name="pressure" value="<%= data[1][i] %>"> </td>
+                </tr>
+            <% } %>
+        </table>
+        <div class="row">
+            <div class="col">
+                <button type="submit" name="but" value="1" form="setValues" class="btn btn-secondary submit-button">Update Values</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<%- include("partials/footer") -%>

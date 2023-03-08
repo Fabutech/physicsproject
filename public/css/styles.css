@@ -1,0 +1,96 @@
+/* tree.ejs */
+/* General styling */
+.cont{
+    text-align: center;
+    height: 55%;
+    width: 100%;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.header-div{
+    height: 10%;
+    padding-top: 4vh;
+    text-align: center;
+}
+
+.legend-div{
+    height: 30%;
+    padding-left: 3%;
+    padding-top: 0.5%;
+}
+
+.legend-h{
+    font-size: 3.7vh;
+    margin: 0;
+}
+
+.info-p{
+    padding: 0;
+    margin: 0;
+    font-size: 3.5vh;
+}
+.inner-a{
+    color: #D9DDDC;
+}
+
+.footer-div{
+    height: 5%;
+    text-align: center;
+    color: #D9DDDC
+}
+
+.image{
+    object-fit: contain;
+    max-height: 52vh;
+    max-width: 45vw;
+    height: min(52vh, 45vw);
+    width: auto;
+}
+
+.about-btn{
+    font-size: 3vh;
+}
+
+/* set-values.ejs */
+.values-table{
+    margin: 4% auto;
+}
+
+.outer{
+    text-align: center; 
+    margin: 10%;
+}
+
+/* about.ejs */
+.section1{
+    height: 60%;
+    width: 100%;
+    padding: 5% 20%;
+    text-align: center;
+}
+.about-header{
+    padding-bottom: 2%;
+}
+.about-sub-header{
+    padding-bottom: 0.5%;
+}
+.table{
+    text-align: center;
+}
+.table-label{
+    padding-top: 1%;
+}
+
+.section2{
+    height: 40%;
+    width: 100%;
+    text-align: center;
+    padding: auto;
+}
+.figure{
+    object-fit: contain;
+    max-height: 33vh;
+    height: auto;
+    width: auto;
+}

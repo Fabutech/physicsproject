@@ -1,0 +1,27 @@
+<%- include("partials/header") -%>
+
+<div class="row header-div">
+    <h1>Heating and cooling a gas</h1>
+</div>
+<div class="cont row">
+    <div class="col col-6">
+        <img class="image" src="/Assets/chart2.png" alt="chart">
+    </div>
+    <div class="col col-6">
+        <img class="image" src="/Assets/chart1.png" alt="chart">
+    </div>
+</div>
+<div class="row legend-div">
+    <p class="legend-h">Chart Information</p>
+    <p class="info-p"><b>Best fit Equation: </b><em class="inner-a">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp y = <%= equation %></em></p>
+    <p class="info-p"><b>Absolute zero: </b><em class="inner-a">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<%= absolute_zero %> °C</em></p>
+    <form action="/about" method="get">
+        <p class="info-p"><b>About the experiment: </b>&nbsp&nbsp<button class="btn btn-secondary about-btn">About page</button></p>
+    </form>
+    <p class="info-p"></p>
+</div>
+<div class="row footer-div">
+    <p>© Copyrights by Fabutech</p>
+</div>
+
+<%- include("partials/footer") -%>

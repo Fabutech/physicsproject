@@ -1,0 +1,50 @@
+/* Base containers */
+.main-container {
+    width: 100vw; 
+    height: 100vh; /* height:width ratio = 187/265*0.95 = .67037736  */
+    background: #777777;
+    margin: auto;
+    position: fixed;
+    top:0;bottom:0; /* vertical center */
+    left:0;right:0; /* horizontal center */
+}
+
+.content-container-wrapper {
+    bottom: 0;
+    position: absolute;
+    top: 40px;
+    width: 100%;
+}
+
+.content-container {
+    width: 100%;
+    height: 100%;
+}
+
+/* Navbar */
+.navContainer{
+    background-color: #414141 !important;
+}
+/* #565656 */
+.navButton {
+    background-color: #222021 !important; 
+}
+.navButton:hover {
+    background-color: #363636 !important; 
+}
+
+/* Forms */
+.container-form {
+    padding: 8% 20%;
+}
+
+.form-header {
+    margin-bottom: 5%;
+}
+
+.form-label {
+    font-size: 1.2rem;
+}
+.submit-button {
+    background-color: #414141 !important;
+}

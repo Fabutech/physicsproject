@@ -1,0 +1,31 @@
+<%- include("partials/header") -%>
+
+<div class="section1">
+    <h1 class="about-header">Heating and cooling a gas</h1>
+    <h4 class="about-sub-header">Context</h4>
+    <p>
+        We've got a given mass of gas in a glass flask with <b>constant volume</b> as shown in the figure 1.
+        The flask is immersed in boiling water. As we allow the water to cool, the change in temperature
+        of the gas and its change in pressure are being mesured
+    </p>
+    <p>
+        The data which was read from the pressure gauge and the thermometer can be found in the following table:
+    </p>
+    <div class="table">
+        <img id="table1" src="/Assets/value_table.png" alt="value_table">
+        <div class="row table-label">
+            <label for="table1">Table 1: Values read during the experiment</label>
+        </div>
+    </div>
+</div>
+
+<div class="section2">
+    <div class="row">
+        <img id="fig1" src="/Assets/graphic.png" alt="figure" class="figure">
+    </div>
+    <div class="row">
+        <label for="fig1">Figure 1: Experiment setup</label>
+    </div>
+</div>
+
+<%- include("partials/footer") -%>
