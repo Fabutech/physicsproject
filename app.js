@@ -14,13 +14,14 @@ let x = [98.6, 87.5, 78.6, 68.3, 62.6, 49.5, 40.2, 30.6, 17.3, 7.5];
 let y = [920, 892, 870, 843, 830, 798, 773, 750, 719, 695];
 
 app.get('/', (req, res) => {
-    const python1 = spawn("python3", ["script1.py", x, y]);
-    const python2 = spawn("python3", ["script2.py", x, y]);
+    const python1 = spawn("python3", ["script1.py", x, y], {detached: true,});
+    const python2 = spawn("python3", ["script2.py", x, y], {detached: true,});
     python1.stdout.on('data', function (absolute_zero) {
         python2.stdout.on('data', function (equation) {
             res.render("chart", {equation: equation, absolute_zero: absolute_zero, step: 0});
         });
     });
+    
 })
 
 app.get("/set_values", (req, res) => {

@@ -2,14 +2,14 @@
 /* General styling */
 .cont{
     text-align: center;
-    height: 55%;
+    height: 48%;
     width: 100%;
     padding: 0 !important;
     margin: 0 !important;
 }
 
 .header-div{
-    height: 10%;
+    height: 17%;
     padding-top: 4vh;
     text-align: center;
 }
@@ -17,7 +17,7 @@
 .legend-div{
     height: 30%;
     padding-left: 3%;
-    padding-top: 0.5%;
+    padding-top: 2%;
 }
 
 .legend-h{
@@ -42,7 +42,7 @@
 
 .image{
     object-fit: contain;
-    max-height: 52vh;
+    max-height: 47vh;
     max-width: 45vw;
     height: min(52vh, 45vw);
     width: auto;
